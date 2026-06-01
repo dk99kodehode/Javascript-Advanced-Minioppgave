@@ -29,7 +29,7 @@ const categoryType = products.filter(
 
 console.log(`Disse har categorien Electronics`, categoryType);
 
-/* Oppgave 4* Bruker SOME for å ha en boolean for product price*/
+/* Oppgave 4* Bruker SOME for å ha en boolean for product price koster 1000 eller meir */
 const aboveTresh = products.some((product) => product.price >= 1000);
 console.log(aboveTresh);
 
