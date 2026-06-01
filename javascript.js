@@ -10,18 +10,16 @@ const products = [
   { name: "Sneakers", price: 300, category: "clothing" },
 ];
 
-console.log(`Dette er en full liste av alle produktene`, products);
-
 /* Oppgave 1* Bruker FILTER for å sjekke om item pricen er mindre enn cash */
 const cash = 200;
 const affordableItems = products.filter((item) => item.price <= cash);
 console.log(`Med 200kr kan eg kjøpe disse`, affordableItems);
 
-/* Oppgave 2* Bruker MAP for å lage et nytt array av Names    */
+/* Oppgave 2* Bruker MAP for å lage et nytt array  productNames   */
 const productNames = products.map((product) => `${product.name}`);
 console.log(`Navnet på produktene er `, productNames);
 
-/* Oppgave 3*  Bruker Filter for category for å sjekke hver array om categorien inneholder "electronics"*/
+/* Oppgave 3*  Bruker Filter for category for å sjekke hver objcet i  array om categorien inneholder "electronics"*/
 
 const categoryType = products.filter(
   (product) => product.category === "electronics",
