@@ -21,11 +21,11 @@ console.log(`Navnet på produktene er `, productNames);
 
 /*Oppgave 3*  Bruker filter for å filtrere ut product som har kategorien "Electronics" der etter gi meg alle produkt navne som har kategorien "Electronic" med map*/
 
-const electronicsProducts = products
+const kategoryProducts = products
   .filter((product) => product.category === "electronics")
   .map((product) => `${product.name} har  kategorien electronics`);
 
-console.log(electronicsProducts);
+console.log(kategoryProducts);
 
 /*Oppgave 4* Bruker SOME / Boolean for å sjekke om prisen er 1000 eller meir */
 const aboveTresh = products.some((product) => product.price >= 1000);
